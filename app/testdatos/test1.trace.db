@@ -1,0 +1,18 @@
+2019-06-04 13:50:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "name" no encontrada
+Column "name" not found [42122-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:451)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3214)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3287)
+	at org.h2.jdbc.JdbcResultSet.getObject(JdbcResultSet.java:533)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCResultSetImpl.getAttributeValue(JDBCResultSetImpl.java:155)
+	at org.jkiss.dbeaver.ext.snowflake.views.SnowflakeConnectionPage.loadDictList(SnowflakeConnectionPage.java:305)
+	at org.jkiss.dbeaver.ext.snowflake.views.SnowflakeConnectionPage.testConnection(SnowflakeConnectionPage.java:289)
+	at org.jkiss.dbeaver.ui.dialogs.connection.ConnectionPageSettings.testConnection(ConnectionPageSettings.java:372)
+	at org.jkiss.dbeaver.ui.dialogs.connection.ConnectionWizard$ConnectionTester.testInPage(ConnectionWizard.java:319)
+	at org.jkiss.dbeaver.ui.dialogs.connection.ConnectionWizard$ConnectionTester.run(ConnectionWizard.java:301)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:102)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

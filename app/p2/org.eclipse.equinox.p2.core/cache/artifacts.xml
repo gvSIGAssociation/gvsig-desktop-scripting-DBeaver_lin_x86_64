@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='download cache' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.system' value='true'/>
+    <property name='p2.timestamp' value='1558296842847'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='3'>
+    <artifact classifier='binary' id='org.jkiss.dbeaver.ce.feature_root.gtk.linux.x86_64' version='6.0.5.201905192012'>
+      <properties size='1'>
+        <property name='download.size' value='8060'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.jkiss.dbeaver.ce.feature_root' version='6.0.5.201905192012'>
+      <properties size='1'>
+        <property name='download.size' value='13460'/>
+      </properties>
+    </artifact>
+    <artifact classifier='binary' id='org.jkiss.dbeaver.core.product.executable.gtk.linux.x86_64' version='6.0.5.201905192012'>
+      <properties size='1'>
+        <property name='download.size' value='29362'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

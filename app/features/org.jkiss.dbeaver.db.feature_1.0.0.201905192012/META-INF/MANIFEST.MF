@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: jkiss.org
+Build-Time: 201905191612
+Created-By: jkiss.org
+Build-Jdk: 1.8.0_141
+
